@@ -68,7 +68,7 @@ class ShowModel
     }
     function ShowArtistShowsById($id_artist)
     {
-        $query = $this->db->prepare("SELECT `show`.*, artist.name as `artist` FROM `show` JOIN `artist` ON show.id_artist = artist.id_artist WHERE `show`.`id_artist`=?");
+        $query = $this->db->prepare("SELECT * FROM `show` WHERE `id_artist`=?");
         $query->execute([$id_artist]);
         $shows = $query->fetchAll(PDO::FETCH_OBJ); // devuelve un arreglo de objetos
         return $shows;
