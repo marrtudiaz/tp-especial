@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-10-2022 a las 23:03:34
+-- Tiempo de generación: 16-10-2022 a las 20:28:59
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -39,9 +39,9 @@ CREATE TABLE `artist` (
 --
 
 INSERT INTO `artist` (`id_artist`, `name`, `type`, `description`) VALUES
-(69, 'Jhonny', 'The mad hatter', 'It\'s A FICTIONAL CHARACTER I'),
-(71, 'Glenda Goyette', 'equilibrist', 'The best in town'),
-(72, 'Krusty', 'Clown', 'Krusty the happy clown');
+(76, 'Glenda Goyette', 'Equilibrist', 'She is the best in town'),
+(77, 'krusty', 'the clown', 'the best jokes'),
+(78, 'Jack', 'The mad hatter', 'He is a wonderful  magic artist');
 
 -- --------------------------------------------------------
 
@@ -62,12 +62,12 @@ CREATE TABLE `show` (
 --
 
 INSERT INTO `show` (`id_show`, `name`, `id_artist`, `date`, `price`) VALUES
-(96, 'The amazing', 69, '2022-10-13', 500),
-(97, 'Laugh with', 72, '2022-10-17', 2020),
-(98, 'The magic place', 69, '2022-10-20', 2020),
-(99, 'Tea Party ', 71, '2022-10-26', 300),
-(100, 'Around the world', 72, '2022-10-28', 5),
-(101, 'Strange Makeup', 71, '2022-10-19', 400);
+(105, 'The magic World', 76, '2022-10-15', 2020),
+(106, 'Laugh and love', 77, '2022-10-21', 3000),
+(107, 'The mysterious trip', 78, '2022-10-13', 3450),
+(108, 'Magic and more magic', 77, '2022-10-13', 1550),
+(109, 'Dance and enjoy', 76, '2022-09-09', 5000),
+(111, 'Crazy', 78, '2022-10-28', 2350);
 
 -- --------------------------------------------------------
 
@@ -119,13 +119,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de la tabla `artist`
 --
 ALTER TABLE `artist`
-  MODIFY `id_artist` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id_artist` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT de la tabla `show`
 --
 ALTER TABLE `show`
-  MODIFY `id_show` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+  MODIFY `id_show` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 
 --
 -- AUTO_INCREMENT de la tabla `user`
