@@ -20,10 +20,10 @@ El usuario debe poder desloguearse (logout)
 Solo los usuarios logueados pueden modificar las categorías y los ítems.
 Se debe crear servicios de ABM (alta/baja/modificación) para administrar los datos:
 Administrar Ítems (entidad del lado N de la relación).
-Lista de Items (Noticias/Productos/…)
-Agregar Items (Noticias/Productos/…)
-Eliminar Items (Noticias/Productos/…)
-Editar Items (Noticias/Productos/…)
+Lista de Items 
+Agregar Items 
+Eliminar Items 
+Editar Items 
 
 
 Email:martuudiaz28@gmail.com 
